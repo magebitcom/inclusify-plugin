@@ -54,11 +54,11 @@ else. No API key is involved anywhere.
 
 Twenty-two tools: where a site stands, the fix list with the strings to grep for in your own
 templates, live keyboard and screen-reader checks, rendering under forced colours and 400% zoom,
-alt-text review, checking a fix before you deploy it, and a pass/fail gate for CI. Each one is
-documented, along with what it deliberately does not know, at
-[inclusifyapp.com/docs/integrations/claude](https://inclusifyapp.com/docs/integrations/claude).
+alt-text review, checking a fix before you deploy it, and a pass/fail gate for CI.
 
-They are the same tools on every client, and the reference lives in one place on purpose.
+They are the same tools on every client. Each one, along with what it deliberately does not know
+and the two allowances that bound the live checks, is documented on the page linked above — the
+reference lives in one place on purpose, so this README does not restate it.
 
 ## The skill
 
