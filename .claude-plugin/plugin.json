@@ -1,0 +1,12 @@
+{
+  "name": "inclusify",
+  "version": "1.0.0",
+  "description": "Accessibility and WCAG compliance for websites in your Inclusify account: scan results, a prioritised fix list with the strings to grep for in your own source, keyboard and screen-reader checks against live pages, and validation of a fix before you deploy it.",
+  "author": {
+    "name": "Magebit",
+    "url": "https://inclusifyapp.com"
+  },
+  "homepage": "https://inclusifyapp.com/docs/integrations/mcp",
+  "repository": "https://github.com/magebitcom/inclusify-plugin",
+  "license": "MIT"
+}
