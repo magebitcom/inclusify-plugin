@@ -1,5 +1,6 @@
 {
   "name": "inclusify",
+  "description": "Accessibility and WCAG tooling for websites in your Inclusify account, over the Inclusify MCP server.",
   "owner": {
     "name": "Magebit",
     "url": "https://inclusifyapp.com"
