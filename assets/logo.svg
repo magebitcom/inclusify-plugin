@@ -1,23 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <!-- Inclusify app icon - "Circle of many" with included person, on brand blue.
-       Generated from docs/brand/logo/shopify-app-icon-blue.svg geometry. -->
-  <rect width="512" height="512" fill="#0066FF"/>
-  <g transform="translate(56 56) scale(0.78125)" fill="#FFFFFF">
-    <circle cx="256"   cy="66"    r="42"/>
-    <circle cx="351"   cy="91.5"  r="26"/>
-    <circle cx="420.5" cy="161"   r="36"/>
-    <circle cx="446"   cy="256"   r="22"/>
-    <circle cx="420.5" cy="351"   r="40"/>
-    <circle cx="351"   cy="420.5" r="26"/>
-    <circle cx="256"   cy="446"   r="34"/>
-    <circle cx="161"   cy="420.5" r="22"/>
-    <circle cx="91.5"  cy="351"   r="42"/>
-    <circle cx="66"    cy="256"   r="26"/>
-    <circle cx="91.5"  cy="161"   r="36"/>
-    <circle cx="161"   cy="91.5"  r="22"/>
-    <g transform="translate(112 116) scale(12)">
-      <path d="M20.5 6c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 8c1.86.5 4 .83 6 1v13h2v-6h2v6h2V9c2-.17 4.14-.5 6-1l-.5-2z"/>
-      <circle cx="12" cy="3.9" r="2.35"/>
-    </g>
-  </g>
+  <!-- Inclusify brand mark, identical geometry to public/favicon.svg and the LogoMark
+       component the marketing header renders: the accessibility person in white on brand
+       blue, rounded at 22% (rx 112 of 512). Kept the same on purpose — a marketplace
+       listing should show the mark somebody already saw in their browser tab.
+
+       Not the circle-of-many app icon: that variant has square corners and appears on no
+       live surface. See the brand note in the Inclusify repo's docs. -->
+  <rect width="512" height="512" rx="112" fill="#0066FF"/>
+  <g transform="translate(28.0000 28.0000) scale(19.00000)" fill="#FFFFFF"><path d="M21.000,8.000 Q21.000,9.000 20.000,9.000 L16.000,9.000 Q15.000,9.000 15.000,10.000 L15.000,21.000 Q15.000,22.000 14.000,22.000 L14.000,22.000 Q13.000,22.000 13.000,21.000 L13.000,17.000 Q13.000,16.000 12.000,16.000 L12.000,16.000 Q11.000,16.000 11.000,17.000 L11.000,21.000 Q11.000,22.000 10.000,22.000 L10.000,22.000 Q9.000,22.000 9.000,21.000 L9.000,10.000 Q9.000,9.000 8.000,9.000 L4.000,9.000 Q3.000,9.000 3.000,8.000 L3.000,8.000 Q3.000,7.000 4.000,7.000 L20.000,7.000 Q21.000,7.000 21.000,8.000 L21.000,8.000 Z"/><circle cx="12" cy="4" r="2"/></g>
 </svg>
