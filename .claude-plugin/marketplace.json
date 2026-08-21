@@ -1,0 +1,14 @@
+{
+  "name": "inclusify",
+  "owner": {
+    "name": "Magebit",
+    "url": "https://inclusifyapp.com"
+  },
+  "plugins": [
+    {
+      "name": "inclusify",
+      "source": "./",
+      "description": "Accessibility and WCAG compliance for your own websites, over the Inclusify MCP server."
+    }
+  ]
+}

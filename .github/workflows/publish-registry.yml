@@ -1,0 +1,33 @@
+name: Publish to the MCP Registry
+
+# Publishes server.json to the official registry, which is what feeds the downstream
+# catalogues (Smithery, PulseMCP, Docker Hub, and VS Code's @mcp gallery via the GitHub
+# registry). Runs on a version tag so a listing update is a deliberate act.
+#
+# Auth is DNS-based, which is what buys us the com.inclusifyapp/* namespace instead of a
+# GitHub-shaped one. The private key lives in the MCP_REGISTRY_KEY secret; its public half
+# is a TXT record on the apex of inclusifyapp.com. Rotating the key means replacing both,
+# and removing the old TXT record — a stale record is tried first and fails verification.
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install mcp-publisher
+        run: |
+          curl -sSL "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_linux_amd64.tar.gz" \
+            | tar xz mcp-publisher
+          ./mcp-publisher --version
+
+      - name: Authenticate
+        run: ./mcp-publisher login dns --domain inclusifyapp.com --private-key "${{ secrets.MCP_REGISTRY_KEY }}"
+
+      - name: Publish
+        run: ./mcp-publisher publish

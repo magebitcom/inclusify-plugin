@@ -1,0 +1,10 @@
+{
+  "name": "inclusify",
+  "version": "1.0.0",
+  "description": "Accessibility and WCAG compliance data for websites in your Inclusify account.",
+  "mcpServers": {
+    "inclusify": {
+      "httpUrl": "https://app.inclusifyapp.com/api/mcp/customer"
+    }
+  }
+}
